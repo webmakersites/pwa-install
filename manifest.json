@@ -1,6 +1,5 @@
 {
-  "background_color": "purple",
-  "description": "Shows random fox pictures. Hey, at least it isn't cats.",
+  "description": "A Demo of install-pwa and the Web Share API.",
   "display": "fullscreen",
   "icons": [
     {
@@ -11,7 +10,7 @@
   ],
   "name": "The Fox App",
   "short_name": "Fox App",
-  "start_url": "index.html",
+  "start_url": "index.html?place=pwa",
   "background_color": "#428e92",
   "theme_color": "#00363a"
 }
