@@ -10,7 +10,7 @@
   ],
   "name": "The Fox App",
   "short_name": "Fox App",
-  "start_url": "index.html?place=pwa",
+  "start_url": "index.html",
   "background_color": "#428e92",
   "theme_color": "#00363a"
 }
