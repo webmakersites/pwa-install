@@ -1,4 +1,3 @@
-// UPDATE v1.0.1
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('fox-store').then((cache) => cache.addAll([
