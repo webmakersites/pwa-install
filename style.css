@@ -162,10 +162,8 @@ box-shadow: 11px 2px 26px 2px rgba(0,0,0,0.5);*/
   }
 
   .white {
-    /*background: white;
-    color: #818181;*/
-    background: #006064;
-    color: white;
+    background: white;
+    color: black;
     padding: 60px;
   }
   .menu-items {
