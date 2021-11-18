@@ -1,4 +1,4 @@
-
+// UPDATE v1.0.1
 // Register service worker to control making site work offline
 
 if ('serviceWorker' in navigator) {
@@ -20,6 +20,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   // Update UI to notify the user they can add to home screen
   addBtn.style.display = 'inline-block';
+  // alert("HEY, INSTALL ME!!")
 
   addBtn.addEventListener('click', () => {
     // hide our user interface that shows our A2HS button
