@@ -7,7 +7,6 @@
 
     <link href="style.css" rel="stylesheet">
     <script src="index.js" defer></script>
-        <script src="prompt-test.js" defer></script>
 
     <link rel="manifest" href="manifest.json">
   </head>
@@ -22,9 +21,12 @@
     <br>
     <center>
     <img src="https://webmakersites.github.io/pwa-examples/a2hs/icon/fox-icon.png">
-    <h1>
+    <h1 style="font-family: Fredericka the Great, Roboto;">
       Welcome to the Fox App!
     </h1>
+      <p>
+        A Demo of install-pwa and the Web Share API.
+      </p>
 
     </center>
     
@@ -33,17 +35,24 @@
     <!--SIDENAV-->
     <div id="mySidenav" class="sidenav">
   <div class="white">
-  <p class="closebtn" onclick="closeNav()">&times;</p>    
+  <p class="closebtn material-icons" onclick="closeNav()">close</p>    
     <br>
 
-  <div class='hover-white'>
- <center> <span class="material-icons sign-in-border hover-white">apps</span>
-   </center>
+  <center><div class='hover-white'>
+  <span class="material-icons sign-in-border hover-white"><img src="https://webmakersites.github.io/pwa-examples/a2hs/icon/fox-icon.png" width="60px" height="60px">
+</span>
     </div>
+    <p style="font-family: Fredericka the Great, Roboto; color: black;">
+      The Fox App
+    </p>
+       </center>
+
       </div>
 <div class="menu-items">
   
   <a href="https://github.com/webmakersites/pwa-install/" class="menu-item">Source Code</a>
+    <a class="menu-item btn-share">Share</a>
+
     </div>
 
 </div>
