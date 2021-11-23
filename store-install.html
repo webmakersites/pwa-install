@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="install-req.js" defer></script>
+          <script src="index.js" defer></script>
+
+
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Simple Install PWA</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel='stylesheet' href='./style.css'>
+    <link rel="shortcut icon" href="https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1" type="image/x-icon">
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js');
+        };
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWA Example">
+    <link rel="apple-touch-icon" href="icon-152x152.png">
+    <meta name="msapplication-TileImage" content="https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1">
+    <meta name="msapplication-TileColor" content="#ffffff"><style>
+body {font-family: Roboto;}
+h1, h2, h3 {font-weight: 400;}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding-top: 20px; /* Location of the box */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  overflow: auto; /* Enable scroll if needed */
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  border-radius: 3px;
+
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.appicon {
+border-radius: 3px;
+width: 100px;
+height: 100px;
+
+}
+.appsc {
+width: 80%;
+border-radius: 3px;
+</style>
+</head>
+<body>
+
+
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close material-icons" onclick="history.back();">close</span>
+    <span class="close material-icons btn-share">share</span>
+
+    
+    <table width="100%">
+<tbody>
+<tr>
+<td style="width: 150px;"><img class="appicon" src="https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1"/></td>
+<td>
+<h1>Example PWA</h1>
+<p>by HG</p>
+<a class="button add-button" style="display:block;">Install<a>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Screenshots</h2>
+<img class="appsc" src="https://gcdn.pbrd.co/images/1KuiqsYGCuND.png?o=1" />
+    
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
