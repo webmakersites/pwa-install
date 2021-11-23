@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+        <script src="install-req.js" defer></script>
+          <script src="index.js" defer></script>
+
+
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Simple Install PWA</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel='stylesheet' href='./style.css'>
+    <link rel="shortcut icon" href="https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1" type="image/x-icon">
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js');
+        };
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWA Example">
+    <link rel="apple-touch-icon" href="icon-152x152.png">
+    <meta name="msapplication-TileImage" content="https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+</head>
+
+<body>
+    
+    <center class="middle">  
+         <img src="https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1" width="20" height="20" onerror="this.src('')">
+
+   <h1>
+    Installing Is Required to Continue
+  </h1>
+  <a class="button add-button">Install</a>
+        <a class="button btn-share">Share</a>
+
+      </center> 
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
