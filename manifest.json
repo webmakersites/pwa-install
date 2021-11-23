@@ -1,16 +1,29 @@
 {
-  "description": "A Demo of install-pwa and the Web Share API.",
-  "display": "standalone",
-  "icons": [
-    {
-      "src": "https://webmakersites.github.io/pwa-examples/a2hs/icon/fox-icon.png",
+  "name": "Simple Install PWA",
+  "short_name": "Simple PWA",
+  "icons": [{
+    "src": "https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1",
       "sizes": "192x192",
       "type": "image/png"
-    }
-  ],
-  "name": "The Fox App",
-  "short_name": "Fox App",
-  "start_url": "index.html",
-  "background_color": "#428e92",
-  "theme_color": "#00363a"
+    }, {
+      "src": "https://docs.google.com/drawings/d/e/2PACX-1vR6mnb1i0uRGYg5XVluPQ52bDaYQb7CjcuwWxq5njzRJE9mfhqpZXYl6AGmAFV2WX4hfe3y9Ax1TvrF/pub?w=604&h=455",
+      "sizes": "256x256",
+      "type": "image/png"
+    }],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "black"
 }
