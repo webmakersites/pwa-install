@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-        <title>PWA WITH INSTALL (Fox App)</title>
-    <!--<title>A2HS demo</title>-->
-
-    <link href="style.css" rel="stylesheet">
-    <script src="index.js" defer></script>
-
-    <link rel="manifest" href="manifest.json">
-  </head>
-  <body>
-    <nav>
-        <a href='#' class='selected material-icons' onclick="openNav()">menu</a>
-        <!--<a href='#' class='selected material-icons'>refresh</a>
-         <a id="myBtn" style="cursor: pointer;" class='selected material-icons'>signal_wifi_off</a>-->
-      <a href='#'class='add-button selected material-icons'>launch</a>
-         
- </nav>
-    <br>
-    <center>
-    <img src="https://webmakersites.github.io/pwa-examples/a2hs/icon/fox-icon.png">
-    <h1 style="font-family: Fredericka the Great, Roboto;">
-      Welcome to the Fox App!
-    </h1>
-      <p>
-        A Demo of install-pwa and the Web Share API.
-      </p>
-
-    </center>
-    
-    
-    <!--UPDATE v1.0.1-->
-    <!--SIDENAV-->
-    <div id="mySidenav" class="sidenav">
-  <div class="white">
-  <p class="closebtn material-icons" onclick="closeNav()">close</p>    
-    <br>
-
-  <center><div class='hover-white'>
-  <span class="material-icons sign-in-border hover-white"><img src="https://webmakersites.github.io/pwa-examples/a2hs/icon/fox-icon.png" width="60px" height="60px">
-</span>
-    </div>
-    <p style="font-family: Fredericka the Great, Roboto; color: black;">
-      The Fox App
-    </p>
-       </center>
-
-      </div>
-<div class="menu-items">
+<head>
   
-  <a href="https://github.com/webmakersites/pwa-install/" class="menu-item">Source Code</a>
-    <a class="menu-item btn-share">Share</a>
+      <script src="install.js" defer></script>
+      <script src="index.js" defer></script>
 
-    </div>
 
-</div>
-    <!--SIDENAV END-->
+  
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Simple Install PWA</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel='stylesheet' href='./style.css'>
+    <link rel="shortcut icon" href="https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1" type="image/x-icon">
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js');
+        };
+    </script>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PWA Example">
+    <link rel="apple-touch-icon" href="icon-152x152.png">
+    <meta name="msapplication-TileImage" content="https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+</head>
+
+<body>
+    
+             <img src="https://gcdn.pbrd.co/images/sj6g0wvm5WvT.png?o=1" width="34" height="34" onerror="this.src('')">
+
+   <h1>
+    Simple Install PWA
+  </h1>
+  <a style="display: block;" class="add-button button">
+    
+  Add to Homescreen
+  </a>
+          <a class="button btn-share">Share</a>
+  <a href="store-install.html"class="button">PWA "Store Install"</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
